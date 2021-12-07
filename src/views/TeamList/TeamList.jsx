@@ -12,7 +12,7 @@ function TeamList() {
         .finally(() => setLoading(false))
     }, [])
 
-    if(loading) return <h1>Loading Teams...</h1>
+    if(loading) return <h1>Loading teams...</h1>
     
     return (
         <>
