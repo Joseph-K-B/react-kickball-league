@@ -13,7 +13,7 @@ function PlayerList() {
         .finally(() => setLoading(false))
     }, [])
 
-    if(loading) return <h1>Loading Players...</h1>
+    if(loading) return <h1>Loading players...</h1>
 
     return(
         <>
