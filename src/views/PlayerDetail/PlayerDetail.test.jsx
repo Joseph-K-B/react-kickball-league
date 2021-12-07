@@ -1,21 +1,21 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter, Route } from 'react-router-dom'
-import TeamDetail from './TeamDetail'
+import PlayerDetail from './PlayerDetail';
 
 it('renders team details according to id param', async () => {
     const {container} = render(
-        <MemoryRouter initialEntries={['/teams/1']}>
-            <Route path="/teams/:teamId">
-                <TeamDetail />
+        <MemoryRouter initialEntries={['/players/1']}>
+            <Route path="/players/:id">
+                <PlayerDetail />
             </Route>
         </MemoryRouter>
     );
 
-    screen.getByText('Loading team...')
+    screen.getByText('Loading player info...')
 
-    const team = await screen.findByText(/Bridge City Sneakers/, {exact: false});
+    const player = await screen.findByText(/Ben E. Jetts/, {exact: false});
     const location = await screen.findByText(/Portland, OR/, {exact: false});
-    expect(team).toBeInTheDocument();
+    expect(player).toBeInTheDocument();
     expect(location).toBeInTheDocument();
     expect(container).toMatchSnapshot();
 })
