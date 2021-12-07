@@ -3,12 +3,12 @@ import { Link, useParams } from "react-router-dom";
 import { getTeamById } from "../../services/teams";
 
 function TeamDetail() {
-    const { id } = useParams()
+    const { teamId } = useParams()
     const[team, setTeam] = useState(null)
 
     useEffect(() => {
-        getTeamById(id).then((res) => setTeam(res))
-    }, [id])
+        getTeamById(teamId).then((res) => setTeam(res))
+    }, [teamId])
 
     if(!team) return <h2>Loading team...</h2>
 

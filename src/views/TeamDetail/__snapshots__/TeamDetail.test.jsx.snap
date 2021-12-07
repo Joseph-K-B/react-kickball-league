@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders team details according to id param 1`] = `
+<div>
+  <h1>
+    Bridge City Sneakers
+  </h1>
+  <h3>
+    Portland
+    , 
+    OR
+  </h3>
+  <ul>
+    <li>
+      <a
+        href="/players/1"
+      >
+        <p>
+          Pitcher
+           - 
+          Ben E. Jetts
+        </p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/players/2"
+      >
+        <p>
+          Catcher
+           - 
+          Hans Olo
+        </p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/players/3"
+      >
+        <p>
+          Outfield
+           - 
+          Ron Long
+        </p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/players/4"
+      >
+        <p>
+          Shortstop
+           - 
+          Shorty Biggum
+        </p>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
