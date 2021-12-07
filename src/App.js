@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 import './App.css';
 import Home from './views/Home/Home';
+import PlayerDetail from './views/PlayerDetail/PlayerDetail';
 import PlayerList from './views/PlayerList/PlayerList';
 import TeamDetail from './views/TeamDetail/TeamDetail';
 import TeamList from './views/TeamList/TeamList';
@@ -28,6 +29,7 @@ function App() {
       <Route exact path="/teams" component={TeamList}/>
       <Route exact path="/teams/:id" component={TeamDetail}/>
       <Route exact path="/players" component={PlayerList}/>
+      <Route exact path="/players/:id" component={PlayerDetail}/>
     </main>
     </Router>
     </section>
