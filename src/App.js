@@ -6,6 +6,7 @@ import PlayerList from './views/PlayerList/PlayerList';
 import TeamDetail from './views/TeamDetail/TeamDetail';
 import TeamList from './views/TeamList/TeamList';
 import './App.css';
+import Bracket from './components/Bracket';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/teams/:teamId" component={TeamDetail}/>
       <Route exact path="/players" component={PlayerList}/>
       <Route exact path="/players/:id" component={PlayerDetail}/>
+      <Route exact path="/bracket" component={Bracket}/>
     </main>
     </Router>
     </section>
