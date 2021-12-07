@@ -4,7 +4,7 @@ function Header() {
     return(
         <>
         <header className="App-header">
-            <h1>PDX Kickball League</h1>
+            <h1 className='title'>PDX Kickball League</h1>
             <nav>
                 <NavLink className='navLink' to="/" exact>
                 Home
