@@ -8,6 +8,7 @@ exports[`renders team details according to id param 1`] = `
   <ul>
     <li>
       <a
+        class="link"
         href="/players/1"
       >
         <p>
@@ -17,6 +18,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/12"
       >
         <p>
@@ -26,6 +28,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/7"
       >
         <p>
@@ -35,6 +38,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/8"
       >
         <p>
@@ -44,6 +48,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/9"
       >
         <p>
@@ -53,6 +58,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/13"
       >
         <p>
@@ -62,6 +68,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/15"
       >
         <p>
@@ -71,6 +78,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/5"
       >
         <p>
@@ -80,6 +88,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/2"
       >
         <p>
@@ -89,6 +98,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/10"
       >
         <p>
@@ -98,6 +108,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/14"
       >
         <p>
@@ -107,6 +118,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/11"
       >
         <p>
@@ -116,6 +128,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/3"
       >
         <p>
@@ -125,6 +138,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/4"
       >
         <p>
@@ -134,6 +148,7 @@ exports[`renders team details according to id param 1`] = `
     </li>
     <li>
       <a
+        class="link"
         href="/players/6"
       >
         <p>

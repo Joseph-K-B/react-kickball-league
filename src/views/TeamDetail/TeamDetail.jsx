@@ -19,13 +19,13 @@ function TeamDetail() {
         <ul>
         {team.players.map((player) => (
             <li key={player.id}>
-                <Link to={`/players/${player.id}`}>
+                <Link className='link' to={`/players/${player.id}`}>
                     <p>{player.position} - {player.name}</p>
                 </Link>
             </li>
         ))}
         </ul>
-
+        <Link className='link' to='/teams'><p>Team Directory</p></Link>
         </>
     )
 }

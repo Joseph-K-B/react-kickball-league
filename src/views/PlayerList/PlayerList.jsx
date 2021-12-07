@@ -20,7 +20,7 @@ function PlayerList() {
         <h1>Player List</h1><ul>
             {players.map((player) => (
                 <li key={player.id}>
-                    <Link to={`/players/${player.id}`}>
+                    <Link className='link' to={`/players/${player.id}`}>
                         <p>{player.name}</p>
                     </Link>
                 </li>

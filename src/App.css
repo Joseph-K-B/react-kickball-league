@@ -1,11 +1,23 @@
-header {
+html {
   background-color: #1D2D44;
-  color: #F0EBD8;
+}
+
+header {
+  background-color: #0D1321;
+  color: #B2BCC2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 7.0rem;
+  height: 10.0rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #1D2D44;
+  color: #B2BCC2;
+  align-items: center;
 }
 
 nav {
@@ -21,6 +33,16 @@ nav {
 }
 
 .navLink:hover {
+  color: #748CAB;
+  text-decoration: underline;
+}
+
+.link {
+  color: #F0EBD8;
+  text-decoration: none;
+}
+
+.link:hover {
   color: #748CAB;
   text-decoration: underline;
 }
