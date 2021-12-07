@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getPlayers } from "../../services/players";
 import { getTeamById } from "../../services/teams";
 
 function TeamDetail() {

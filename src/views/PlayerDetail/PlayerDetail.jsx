@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
+import { Link } from "react-router-dom"
 import { getPlayerById } from "../../services/players"
 
 function PlayerDetail() {
@@ -15,8 +16,10 @@ function PlayerDetail() {
     return(
         <>
         <h1>{player.name}</h1>
+        <Link to={`/teams/${player.teams.id}`}>
         <h3>{player.teams.name}</h3>
-        <h3>{player.teams.city}, {player.teams.state}</h3>
+        </Link>
+        <h3>{player.teams.city}, {player.teams.state}</h3>        
         <h3>{player.position}</h3>
         </>
     )
