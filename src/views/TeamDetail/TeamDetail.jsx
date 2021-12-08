@@ -16,6 +16,7 @@ function TeamDetail() {
         <>
         <h1>{team.name}</h1>
         <h3>{team.city}, {team.state}</h3>
+        <p>Wins: {team.wins}</p>
         <ul>
         {team.players.map((player) => (
             <li key={player.id}>

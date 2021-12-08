@@ -11,6 +11,7 @@ const [bracket, setBracket] = useState([])
 const [matchOne, setMatchOne] = useState([])
 const [matchTwo, setMatchTwo] = useState([])
 const [matchThree, setMatchThree] = useState([])
+const [matchFour, setMatchFour] = useState([])
 
 useEffect(() => {
     getTeams()
@@ -27,6 +28,7 @@ const handleResetClick = async (e) => {
         setMatchOne([])
         setMatchTwo([])
         setMatchThree([])
+        setMatchFour([])
         setLoading(false)
     })
     return;
@@ -53,6 +55,8 @@ const handleMatchClick = (e) => {
             setMatchTwo(value)
         } else if (matchThree.length !== 2) {
             setMatchThree(value)
+        } else if (matchFour.length !== 2) {
+            setMatchFour(value)
         }
     })
     setLoading(false)
@@ -101,6 +105,14 @@ return (
                 <h1>Match Three:</h1>
                 <ul>
                     {matchThree.map((item) => (
+                        <li key={item.id}>{item.name}</li>
+                        ))}
+                </ul>
+            </div>
+            <div className="matchDiv" aria-label="matchThree">   
+                <h1>Match Four:</h1>
+                <ul>
+                    {matchFour.map((item) => (
                         <li key={item.id}>{item.name}</li>
                         ))}
                 </ul>

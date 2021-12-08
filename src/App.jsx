@@ -7,6 +7,7 @@ import TeamDetail from './views/TeamDetail/TeamDetail';
 import TeamList from './views/TeamList/TeamList';
 import './App.css';
 import Bracket from './components/Bracket';
+import AddTeam from './views/AddTeam/AddTeam';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
     <main>
       <Route exact path="/" component={Home}/>
       <Route exact path="/teams" component={TeamList}/>
-      <Route exact path="/teams/:teamId" component={TeamDetail}/>
+      <Route exact path="/teams/new" component={AddTeam} />
       <Route exact path="/players" component={PlayerList}/>
-      <Route exact path="/players/:id" component={PlayerDetail}/>
       <Route exact path="/bracket" component={Bracket}/>
+      <Route exact path="/teams/:teamId" component={TeamDetail}/>
+      <Route exact path="/players/:id" component={PlayerDetail}/>
     </main>
     </Router>
     </section>
