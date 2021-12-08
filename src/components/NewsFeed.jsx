@@ -24,7 +24,7 @@ function NewsFeed(){
                 <h3>More Fake News</h3>
                 <p>
                     Updates coming to the site frequently, we have many new features in the works.
-                    Please bare with us while we implemeny these changes to better serve you and your team.
+                    Please bear with us while we implement these changes to better serve you and your team.
                     Changes will take place over the course of the month of December. 
                     If you experience any issues, feel free to contact us via the email provided at the bottom of the page.
                 </p>

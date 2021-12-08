@@ -26,7 +26,7 @@ function TeamList() {
                 </li>
             ))}
         </ul>
-        <Link className='link' exact to='/teams/new'><p>Add Team</p></Link>
+        <Link className='link' to='/teams/new'><p>Add Team</p></Link>
         </>
     )
 }

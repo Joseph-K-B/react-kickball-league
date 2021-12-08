@@ -1,21 +1,30 @@
 import { render, screen } from '@testing-library/react';
 import { setupServer } from 'msw/node';
 import { rest } from 'msw';
-import { MemoryRouter } from 'react-router';
+import { MemoryRouter, Router, Route } from 'react-router-dom';
+import { createMemoryHistory } from "history";
 import userEvent from '@testing-library/user-event'
 import AddTeam from './AddTeam';
 
+const mockTeam = {
+        id: 9,
+        created_at: '',
+        name: 'redirect',
+        city: 'random',
+        state: 'Vatican City',
+        players: []
+}
+
 const server = setupServer(
+    rest.get('url', (req, res, ctx) => {
+        return res(
+            ctx.json(mockTeam)
+        )
+    }),
     rest.post('url', (req, res, ctx) => {
         return res (
             ctx.json([
-                {
-                    id: 9,
-                    created_at: '',
-                    name: 'redirect',
-                    city: 'random',
-                    state: 'Vatican City'
-                }
+                mockTeam
             ])  
         );
 
@@ -31,10 +40,15 @@ afterAll(() => {
 });
 
 it('renders form to add team and redirects to team details', async () => {
+    const history = createMemoryHistory();
+    history.push('/teams/new');
+
     render(
-        <MemoryRouter>
+        <Router>
+            <Route>
             <AddTeam />
-        </MemoryRouter>
+            </Route>
+        </Router>
     );
 
     screen.getByText('Add a Team');

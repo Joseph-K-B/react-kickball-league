@@ -1,6 +1,47 @@
 import { render, screen } from '@testing-library/react'
+import { setupServer } from 'msw/node';
+import { rest } from 'msw';
 import { MemoryRouter, Route } from 'react-router-dom'
 import TeamList from './TeamList';
+
+const mockTeam1 = {
+    id: 1,
+    created_at: '',
+    name: 'redirect',
+    city: 'random',
+    state: 'Vatican City',
+    players: []
+};
+
+const mockTeam2 = {
+    id: 2,
+    created_at: '',
+    name: 'another one',
+    city: 'random',
+    state: 'curious',
+    players: []
+};
+
+const mock = [mockTeam1, mockTeam2]
+
+const server = setupServer(
+    rest.get('url', (req, res, ctx) => {
+        return res(
+            ctx.json(mock)
+        );
+    }),
+    rest.delete('url', (req, res, ctx) => {
+        return res(ctx.json(mockTeam2));
+    })
+);
+
+beforeAll(() => {
+    server.listen();
+});
+
+afterAll(() => {
+    server.close();
+});
 
 it('renders team details according to id param', async () => {
     const {container} = render(
@@ -11,7 +52,8 @@ it('renders team details according to id param', async () => {
         </MemoryRouter>
     );
 
-    screen.getByText('Loading teams...')
+    screen.getByText('Loading teams...');
+    await screen.findByText(/another one/);
 
     const team = await screen.findByText(/Bridge City Sneakers/, {exact: false});
     const teamTwo = await screen.findByText(/Lakeville Thunderfeet/, {exact: false});

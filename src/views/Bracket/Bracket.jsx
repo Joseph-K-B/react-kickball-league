@@ -1,23 +1,23 @@
-import { useEffect, useState } from "react"
-import { getTeams } from "../services/teams"
-import { shuffle, setRandomMatch } from "../utils/randomizeTeams"
-import BracketControls from "./BracketControls"
-import "./Bracket.css"
+import { useEffect, useState } from "react";
+import { getTeams } from "../../services/teams";
+import { shuffle, setRandomMatch } from "../../utils/randomizeTeams";
+import BracketControls from "../../components/BracketControls";
+import "../Bracket/Bracket.css";
 
 function Bracket() {
-const [loading, setLoading] = useState(true)
-const [teams, setTeams] = useState([])
-const [bracket, setBracket] = useState([])
-const [matchOne, setMatchOne] = useState([])
-const [matchTwo, setMatchTwo] = useState([])
-const [matchThree, setMatchThree] = useState([])
-const [matchFour, setMatchFour] = useState([])
+const [loading, setLoading] = useState(true);
+const [teams, setTeams] = useState([]);
+const [bracket, setBracket] = useState([]);
+const [matchOne, setMatchOne] = useState([]);
+const [matchTwo, setMatchTwo] = useState([]);
+const [matchThree, setMatchThree] = useState([]);
+const [matchFour, setMatchFour] = useState([]);
 
 useEffect(() => {
     getTeams()
     .then((res) => setTeams(res))
     .finally(() => setLoading(false))
-}, [])
+}, []);
 
 const handleResetClick = async (e) => {
     e.preventDefault();
@@ -30,14 +30,14 @@ const handleResetClick = async (e) => {
         setMatchThree([])
         setMatchFour([])
         setLoading(false)
-    })
+    });
     return;
 }
 
 const handleShuffleClick = async (e) => {
     e.preventDefault();
-    setBracket([])
-    await getTeams()     
+    setBracket([]);
+    await getTeams();
     const random = shuffle(teams)
         setBracket(random)
         setLoading(false)
@@ -46,7 +46,7 @@ const handleShuffleClick = async (e) => {
 
 const handleMatchClick = (e) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
     setRandomMatch(bracket)
     .then((value) => {
         if(matchOne.length < 2) {
@@ -59,7 +59,7 @@ const handleMatchClick = (e) => {
             setMatchFour(value)
         }
     })
-    setLoading(false)
+    setLoading(false);
     return;
 }
 
