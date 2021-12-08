@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import { getTeams } from "../services/teams"
+import randomizeTeams from "../utils/randomizeTeams"
 
 function Bracket() {
 const [loading, setLoading] = useState(true)
 const [teams, setTeams] = useState([])
+// const [bracket, setBracket] = useState([])
+// const [matchOne, setMatchOne] = useState([])
 // const [matchOne, setMatchOne] = useState([])
 // Use State for each matchup, need malleable array 
 //to remove indices and avoid repetition
@@ -16,30 +19,40 @@ useEffect(() => {
     .finally(() => setLoading(false))
 }, [])
 
+let bracket = [...teams]
 
-const test = async (arr) => {
-    if (loading === false) {
-        let randomIndex = Math.floor(Math.random() * arr.length)
-        return arr[randomIndex]
-    }
-}
-const matchOneArr = []
 
-test(teams)
-.then(result => matchOneArr.push(result));
 
-console.log( 'MatchOne', matchOneArr);
+// const matchThreeArr = []
+
+
+// const handleShuffleClick = async (e) => {
+//     e.preventDefault();
+//     setLoading(true);
+//     randomizeTeams(bracket, matchOneArr)
+    // .then((result) => 
+    //  matchOneArr.push(result)
+    //  [...matchOne, result]
+    // )
+    // .finally(() => {
+    //     setLoading(false)
+    // })
+    // return matchOneArr;
+// }
+
+// console.log('MATCH ONE ARRAY', matchOneArr)
 
 if(loading) return <h1>Loading bracket...</h1>
 
 return (
     <>
     <h1>Bracket</h1>
-    {/* <ul>
-        {matchOne.map((item) => (
+    <button onClick ={() => randomizeTeams(bracket) && console.log('BRACKET', bracket)}>Shuffle Team</button>
+    <ul>
+        {bracket.map((item) => (
             <li>{item.name}</li>
-        ))}
-    </ul> */}
+            ))}
+        </ul>
     </>
 )
 }

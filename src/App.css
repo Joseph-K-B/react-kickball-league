@@ -24,10 +24,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 10.5em;
+  width: 15.5em;
 }
 
 .navLink {
+  margin: 2.0%;
   color: #F0EBD8;
   text-decoration: none;
 }

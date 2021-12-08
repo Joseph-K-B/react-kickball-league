@@ -15,6 +15,9 @@ function Header() {
                 <NavLink className='navLink' to="/players" exact>
                 Players
                 </NavLink>
+                <NavLink className='navLink' to="/bracket" exact>
+                Bracket
+                </NavLink>
             </nav>
         </header>
         </>
