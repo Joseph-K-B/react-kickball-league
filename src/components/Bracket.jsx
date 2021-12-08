@@ -34,7 +34,6 @@ const handleResetClick = async (e) => {
 
 const handleShuffleClick = async (e) => {
     e.preventDefault();
-    setLoading(true);
     setBracket([])
     await getTeams()     
     const random = shuffle(teams)

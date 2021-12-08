@@ -1,0 +1,10 @@
+.homeSection {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    text-align: center;
+}
+
+img {
+    height: 5rem;
+    width: 5rem;
+}
