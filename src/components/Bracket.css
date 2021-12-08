@@ -1,0 +1,32 @@
+.bracketSection {
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr;
+}
+
+.controlSection {
+    border: #F0EBD8 solid 0.15rem;
+}
+
+.controlDiv{
+    display: flex;
+    align-items: flex-start;    
+}
+button {
+    align-items: center;
+    background-color: #0D1321;
+    border-radius: 12.5%;
+    color: #F0EBD8;
+    height: 2.25rem;
+    margin: 1%;
+}
+
+button:hover {
+    color: #0D1321;
+    background-color: #3E5C76;
+}
+
+.matchDiv {
+    margin: 2.0%;
+    border: #F0EBD8 solid 0.15rem;
+    text-align: center;
+}

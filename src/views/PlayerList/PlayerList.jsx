@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import { getPlayers } from "../../services/players"
 
 function PlayerList() {
-    // const { id } = useParams()
     const[loading, setLoading] = useState(true)
     const [players, setPlayers] = useState([])
 

@@ -1,7 +1,7 @@
 export async function setRandomMatch(arr) {
-           const match = await arr.splice(0, 2)
-           return [...match]           
-        }
+    const match = await arr.splice(0, 2)
+    return [...match]           
+}
 
 //fisher-yates algorithm 
 export function shuffle(arr) {
@@ -14,5 +14,3 @@ export function shuffle(arr) {
     }
     return arr;
 }
-
-// export default shuffle;
