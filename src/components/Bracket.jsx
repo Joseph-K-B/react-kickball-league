@@ -18,10 +18,8 @@ useEffect(() => {
     .finally(() => setLoading(false))
 }, [])
 
-
 const handleResetClick = async (e) => {
     e.preventDefault();
-    setLoading(true)
     await getTeams()
     .then((res) => setTeams(res))
     .finally(() => {
@@ -34,9 +32,11 @@ const handleResetClick = async (e) => {
     return;
 }
 
-const handleShuffleClick = (e) => {
+const handleShuffleClick = async (e) => {
     e.preventDefault();
-    setLoading(true); 
+    setLoading(true);
+    setBracket([])
+    await getTeams()     
     const random = shuffle(teams)
         setBracket(random)
         setLoading(false)
@@ -74,11 +74,11 @@ return (
                 handleMatchClick={handleMatchClick}
                 />
             <div>
-                <ol>
+                <ul>
                     {bracket.map((item) => (
                         <li key={item.id}>{item.name}</li>
                         ))}
-                </ol>
+                </ul>
             </div>
         </section>
         <section className="matchSection">
