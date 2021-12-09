@@ -15,13 +15,13 @@ function UpdateTeam() {
 
     useEffect(() => {
         getTeamById(teamId).then((res) => setTeam(res))
-    }, [teamId])
+    }, [teamId]);
 
     const handleUpdateSubmit = async (e) => {
         e.preventDefault();
         const res = await updateTeamById( teamId, {name, city, state})
         history.push(`/teams/${res[0].id}`)
-    }
+    };
 
     if(!team) return <h2>Loading Team...</h2>
 
@@ -51,7 +51,9 @@ function UpdateTeam() {
                 setState={setState}
             />
         </fieldset>
-        <Link className='link' to='/teams'><p>Team Directory</p></Link>        
+        <Link className='link' to='/teams'>
+            <p>Team Directory</p>
+        </Link>        
         </>
     )
 }

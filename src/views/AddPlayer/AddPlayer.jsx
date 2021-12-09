@@ -26,7 +26,7 @@ function AddPlayer() {
         <fieldset>
             <legend>Add Player</legend>
             <PlayerForm 
-                handleAddPlayerSubmit={handleAddPlayerSubmit}
+                handleSubmit={handleAddPlayerSubmit}
                 name={name}
                 position={position}
                 teamId={teamId}

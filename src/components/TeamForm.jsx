@@ -30,7 +30,7 @@ function TeamForm({
                 value={state} 
                 onChange={(e) => setState(e.target.value)}
             />
-            <button aria-label='add team' type="submit">Add</button>
+            <button aria-label='edit team' type="submit">Submit</button>
         </form>
     );
 }

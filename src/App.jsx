@@ -10,6 +10,7 @@ import Bracket from './views/Bracket/Bracket';
 import UpdateTeam from './views/UpdateTeam/UpdateTeam';
 import AddPlayer from './views/AddPlayer/AddPlayer';
 import './App.css';
+import UpdatePlayer from './views/UpdatePlayer/UpdatePlayer';
 
 function App() {
   return (
@@ -18,15 +19,16 @@ function App() {
       <Header />
     <main>
       <Switch>
-        <Route path="/teams/new" component={AddTeam} />
-        <Route path="/players/new" component={AddPlayer}/>
-        <Route path="/teams/:teamId" component={TeamDetail}/>
-        <Route path="/teams/:teamId/update" component={UpdateTeam}/>
-        <Route path="/players/:id" component={PlayerDetail}/>
-        <Route path="/bracket" component={Bracket}/>
-        <Route path="/players" component={PlayerList}/>
-        <Route path="/teams" component={TeamList}/>
-        <Route path="/" component={Home}/>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/teams" component={TeamList}/>
+        <Route exact path="/players" component={PlayerList}/>
+        <Route exact path="/bracket" component={Bracket}/>
+        <Route exact path="/teams/new" component={AddTeam} />
+        <Route exact path="/players/new" component={AddPlayer}/>
+        <Route exact path="/teams/:teamId" component={TeamDetail}/>
+        <Route exact path="/players/:id" component={PlayerDetail}/>
+        <Route exact path="/players/:id/update" component={UpdatePlayer}/>
+        <Route exact path="/teams/:teamId/update" component={UpdateTeam}/>
       </Switch>
     </main>
     </Router>

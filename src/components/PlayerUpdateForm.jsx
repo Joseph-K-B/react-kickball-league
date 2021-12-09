@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
 import { getTeams } from "../services/teams";
 
-function PlayerForm({
+function PlayerUpdateForm({
     name,
     position,
     setName,
     setPosition,
-    setTeamId,
     handleSubmit,
 }) {
-    const [teams, setTeams] = useState([]);
 
-    useEffect(() => {
-        getTeams()
-        .then((res) => setTeams(res))
-    }, []);
+    // useEffect(() => {
+    //     getTeams()
+    //     .then((res) => setTeams(res))
+    // }, []);
      
     return (
             <form onSubmit={handleSubmit}>
@@ -32,21 +30,8 @@ function PlayerForm({
                     value={position} 
                     onChange={(e) => setPosition(e.target.value)}
                 />
-                <label htmlFor='teams'>Team:</label>
-                <select id='teams' value={teams.id} onChange={(e) => setTeamId(e.target.value)}>
-                    {teams.map((team) => {
-                        return (
-                            <option 
-                                value={team.id} 
-                                key={team.id}
-                            >
-                                {team.name}
-                            </option>
-                        )
-                    })}
-                </select>
                 <button aria-label='edit player' type="submit">Submit</button>
             </form>
     );
 }
-export default PlayerForm;
+export default PlayerUpdateForm
