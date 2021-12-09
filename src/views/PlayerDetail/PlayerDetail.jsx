@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { getPlayerById } from "../../services/players"
+import { getTeams } from "../../services/teams";
 
 function PlayerDetail() {
     const{ id } = useParams()
-    const[player, setPlayer] = useState(null)
+    const[player, setPlayer] = useState(null);
+    const [teams, setTeams] = useState([]);
 
     useEffect(() => {
-        getPlayerById(id).then((res) => setPlayer(res))
+        getPlayerById(id)
+        .then((res) => setPlayer(res))
     }, [id])
 
     if(!player) return <h2>Loading player info...</h2>

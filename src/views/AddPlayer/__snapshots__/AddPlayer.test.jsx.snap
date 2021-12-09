@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders form to add team and redirects to team details 1`] = `
+exports[`renders form to allow admin to add player and redirects to their details 1`] = `
 <div>
   <fieldset>
     <legend>
-      Add Team
+      Add Player
     </legend>
     <form>
       <label
@@ -15,30 +15,28 @@ exports[`renders form to add team and redirects to team details 1`] = `
       <input
         id="name"
         type="text"
-        value="Another Team"
+        value="New Team"
       />
       <label
-        for="city"
+        for="position"
       >
-        City:
+        Position:
       </label>
       <input
-        id="city"
+        id="position"
         type="text"
-        value="Another Town"
+        value="cheerleader"
       />
       <label
-        for="state"
+        for="teams"
       >
-        State:
+        Team:
       </label>
-      <input
-        id="state"
-        type="text"
-        value="US"
+      <select
+        id="teams"
       />
       <button
-        aria-label="edit team"
+        aria-label="edit player"
         type="submit"
       >
         Submit
@@ -46,7 +44,7 @@ exports[`renders form to add team and redirects to team details 1`] = `
     </form>
   </fieldset>
   <h2>
-    Loading team...
+    Loading player info...
   </h2>
 </div>
 `;

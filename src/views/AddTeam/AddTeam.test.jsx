@@ -43,7 +43,7 @@ it('renders form to add team and redirects to team details', async () => {
     const {container} = render(
         <Router history={history}>
             <Route exact path='/teams/new'>
-            <AddTeam />
+                <AddTeam />
             </Route>
             <Route exact path='/teams/:id' component={TeamDetail} />
         </Router>
@@ -54,7 +54,7 @@ it('renders form to add team and redirects to team details', async () => {
     const nameField = screen.getByLabelText(/Name:/);
     const cityField = screen.getByLabelText(/City:/);
     const stateField = screen.getByLabelText(/State:/);
-    const submitBtn = screen.getByRole('button', {name: 'add team' })
+    const submitBtn = screen.getByRole('button', {name: 'edit team' })
 
     userEvent.type(nameField, 'Another Team');
     userEvent.type(cityField, 'Another Town');
@@ -62,5 +62,5 @@ it('renders form to add team and redirects to team details', async () => {
     userEvent.click(submitBtn);
 
     expect(container).toMatchSnapshot();
-    await screen.findByText('name')
+    await screen.findByText('name');
 });
