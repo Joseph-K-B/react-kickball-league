@@ -40,7 +40,7 @@ it('renders form to add team and redirects to team details', async () => {
     const history = createMemoryHistory();
     history.push('/teams/new');
 
-    const {containe} = render(
+    const {container} = render(
         <Router history={history}>
             <Route exact path='/teams/new'>
             <AddTeam />
@@ -61,6 +61,6 @@ it('renders form to add team and redirects to team details', async () => {
     userEvent.type(stateField, 'US');
     userEvent.click(submitBtn);
 
-    expect(containe).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
     await screen.findByText('name')
 });

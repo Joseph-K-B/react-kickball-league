@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './layout/Header/Header';
 import Home from './views/Home/Home';
 import PlayerDetail from './views/PlayerDetail/PlayerDetail';
@@ -8,6 +8,7 @@ import TeamList from './views/TeamList/TeamList';
 import AddTeam from './views/AddTeam/AddTeam';
 import Bracket from './views/Bracket/Bracket';
 import UpdateTeam from './views/UpdateTeam/UpdateTeam';
+import AddPlayer from './views/AddPlayer/AddPlayer';
 import './App.css';
 
 function App() {
@@ -16,14 +17,17 @@ function App() {
     <Router>
       <Header />
     <main>
-      <Route exact path="/teams/:teamId" component={TeamDetail}/>
-      <Route exact path="/teams/:teamId/update" component={UpdateTeam}/>
-      <Route exact path="/players/:id" component={PlayerDetail}/>
-      <Route exact path="/teams/new" component={AddTeam} />
-      <Route exact path="/bracket" component={Bracket}/>
-      <Route exact path="/players" component={PlayerList}/>
-      <Route exact path="/teams" component={TeamList}/>
-      <Route exact path="/" component={Home}/>
+      <Switch>
+        <Route path="/teams/new" component={AddTeam} />
+        <Route path="/players/new" component={AddPlayer}/>
+        <Route path="/teams/:teamId" component={TeamDetail}/>
+        <Route path="/teams/:teamId/update" component={UpdateTeam}/>
+        <Route path="/players/:id" component={PlayerDetail}/>
+        <Route path="/bracket" component={Bracket}/>
+        <Route path="/players" component={PlayerList}/>
+        <Route path="/teams" component={TeamList}/>
+        <Route path="/" component={Home}/>
+      </Switch>
     </main>
     </Router>
     </section>

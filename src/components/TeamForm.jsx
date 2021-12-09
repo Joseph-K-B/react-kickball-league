@@ -1,4 +1,4 @@
-export default function TeamForm({
+function TeamForm({
     name,
     city,
     state,
@@ -34,3 +34,5 @@ export default function TeamForm({
         </form>
     );
 }
+
+export default TeamForm;

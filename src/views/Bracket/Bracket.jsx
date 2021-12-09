@@ -15,7 +15,8 @@ const [matchFour, setMatchFour] = useState([]);
 
 useEffect(() => {
     getTeams()
-    .then((res) => setTeams(res))
+    .then((res) => res.splice(0, 8))
+    .then((teamList) => setTeams(teamList))
     .finally(() => setLoading(false))
 }, []);
 
