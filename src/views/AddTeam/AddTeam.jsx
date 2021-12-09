@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
+import TeamForm from "../../components/TeamForm";
 import { createTeam } from "../../services/teams";
 
 function AddTeam() {
@@ -18,18 +19,15 @@ function AddTeam() {
         <>
         <fieldset>
             <legend>Add Team</legend>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='name'>Name:</label>
-                <input id='name' type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-
-                <label htmlFor='city'>City:</label>
-                <input id='city' type="text" value={city} onChange={(e) => setCity(e.target.value)}/>
-
-                <label htmlFor='state'>State:</label>
-                <input id='state' type="text" value={state} onChange={(e) => setState(e.target.value)}/>
-
-                <button aria-label='add team' type="submit">Add</button>
-            </form>
+            <TeamForm 
+                name={name}
+                city={city}
+                state={state}
+                handleSubmit={handleSubmit}
+                setName={setName}
+                setCity={setCity}
+                setState={setState}
+            />
         </fieldset>
         </>
     )
