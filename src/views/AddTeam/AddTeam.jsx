@@ -9,7 +9,7 @@ function AddTeam() {
     const [state, setState] = useState('');
     const history = useHistory();
 
-    const handleSubmit = async (e) => {
+    const handleAddSubmit = async (e) => {
         e.preventDefault();
         const res = await createTeam({name, city, state})
         history.push(`/teams/${res[0].id}`)
@@ -23,7 +23,7 @@ function AddTeam() {
                 name={name}
                 city={city}
                 state={state}
-                handleSubmit={handleSubmit}
+                handleSubmit={handleAddSubmit}
                 setName={setName}
                 setCity={setCity}
                 setState={setState}

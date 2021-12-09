@@ -7,6 +7,7 @@ import TeamDetail from './views/TeamDetail/TeamDetail';
 import TeamList from './views/TeamList/TeamList';
 import AddTeam from './views/AddTeam/AddTeam';
 import Bracket from './views/Bracket/Bracket';
+import UpdateTeam from './views/UpdateTeam/UpdateTeam';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Header />
     <main>
       <Route exact path="/teams/:teamId" component={TeamDetail}/>
+      <Route exact path="/teams/:teamId/update" component={UpdateTeam}/>
       <Route exact path="/players/:id" component={PlayerDetail}/>
       <Route exact path="/teams/new" component={AddTeam} />
       <Route exact path="/bracket" component={Bracket}/>
