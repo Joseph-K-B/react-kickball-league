@@ -42,21 +42,23 @@ function PlayerList() {
                     <Link className='link' to={`/players/${player.id}`}>
                         <p>{player.name}</p>
                     </Link>
+                        <div>
                         <button
                             type="button"
                             aria-label={`Delete ${player.name}`}
                             onClick={() => handlePlayerDelete({ id: player.id, name: player.name})}
-                        >
-                        Delete
-                    </button>
-                    <Link to={`/players/${player.id}/update`}>
-                        <button
-                            type="button"
-                            aria-label={`Update ${player.name}`}
-                        >
-                            Update
+                            >
+                            Delete
                         </button>
-                    </Link>
+                        <Link to={`/players/${player.id}/update`}>
+                            <button
+                                type="button"
+                                aria-label={`Update ${player.name}`}
+                                >
+                                Update
+                            </button>
+                        </Link>
+                    </div>
                 </li>
             ))}
         </ul>

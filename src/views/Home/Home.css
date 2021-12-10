@@ -1,7 +1,11 @@
 .homeSection {
     display: grid;
-    grid-template-columns: 1.5fr 4fr;
+    grid-template-columns: 2.5fr 4fr;
     text-align: center;
+}
+
+.newsSection {
+    margin: 10%;
 }
 
 img {

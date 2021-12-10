@@ -1,8 +1,17 @@
 .playerList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
 
   .playerListItem {
-    margin: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5%;
+    text-align: center;
+    border: #F0EBD8 solid 0.15rem;
+    border-radius: 7%;
   }

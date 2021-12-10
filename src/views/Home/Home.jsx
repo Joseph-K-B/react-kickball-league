@@ -6,14 +6,15 @@ import "../Home/Home.css"
 function Home() {
     return (
         <>
-        <section className="homeSection">
-            <section>
-                <img src={kickball} alt="kickball"></img>
-            </section>
-            <h1>Home Page</h1>
-            <section className="newsSection">
+        <h1>Home Page</h1>
+        <section className='homeSection'>
+        <section className="newsSection">
+            <img src={kickball} alt="kickball"></img>
             <NewsFeed />
-            </section>
+        </section>
+        <section>
+            <p>something important here</p>
+        </section>
         </section>
         </>
     )
