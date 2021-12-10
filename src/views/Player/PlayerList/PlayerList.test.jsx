@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter, Route } from 'react-router-dom'
-import PlayerList from './PlayerList';
+import PlayerList from './PlayerList'
+
 
 it('renders team details according to id param', async () => {
     const {container} = render(

@@ -1,16 +1,17 @@
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './layout/Header/Header';
 import Home from './views/Home/Home';
-import PlayerDetail from './views/PlayerDetail/PlayerDetail';
-import PlayerList from './views/PlayerList/PlayerList';
-import TeamDetail from './views/TeamDetail/TeamDetail';
-import TeamList from './views/TeamList/TeamList';
-import AddTeam from './views/AddTeam/AddTeam';
-import Bracket from './views/Bracket/Bracket';
-import UpdateTeam from './views/UpdateTeam/UpdateTeam';
-import AddPlayer from './views/AddPlayer/AddPlayer';
 import './App.css';
-import UpdatePlayer from './views/UpdatePlayer/UpdatePlayer';
+import Bracket from './views/Bracket/Bracket';
+import TeamList from './views/Team/TeamList/TeamList';
+import PlayerList from './views/Player/PlayerList/PlayerList';
+import AddTeam from './views/Team/AddTeam/AddTeam';
+import AddPlayer from './views/Player/AddPlayer/AddPlayer';
+import TeamDetail from './views/Team/TeamDetail/TeamDetail';
+import PlayerDetail from "./views/Player/PlayerDetail/PlayerDetail";
+import UpdateTeam from './views/Team/UpdateTeam/UpdateTeam';
+import UpdatePlayer from './views/Player/UpdatePlayer/UpdatePlayer';
+
 
 function App() {
   return (

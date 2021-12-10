@@ -46,7 +46,7 @@ function PlayerForm({
                     );
                 })}
             </select>
-            <button aria-label='edit player' type="submit">Submit</button>
+            <button name='edit player'aria-label='edit player' type="submit">Submit</button>
         </form>
         {/* <p>{teamId}</p> */}
         </>

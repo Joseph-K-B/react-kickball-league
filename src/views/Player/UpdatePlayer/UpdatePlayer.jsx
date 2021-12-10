@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import PlayerUpdateForm from "../../components/PlayerUpdateForm";
-import { getPlayerById, updatePlayerById } from "../../services/players";
+import PlayerUpdateForm from "../../../components/PlayerUpdateForm";
+import { getPlayerById, updatePlayerById } from "../../../services/players";
 
 
 

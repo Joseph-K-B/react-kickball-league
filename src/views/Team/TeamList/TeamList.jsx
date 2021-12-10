@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
-import { deleteTeamById, getTeams } from '../../services/teams';
+import { deleteTeamById, getTeams } from '../../../services/teams';
 
 function TeamList() {
     const [loading, setLoading] = useState(true);

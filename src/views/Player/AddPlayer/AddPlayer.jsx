@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
-import PlayerForm from "../../components/PlayerForm";
-import { createPlayer } from "../../services/players";
+import { createPlayer } from "../../../services/players";
+import PlayerForm from "../../../components/PlayerForm";
 
 function AddPlayer() {
     const [name, setName] = useState('');

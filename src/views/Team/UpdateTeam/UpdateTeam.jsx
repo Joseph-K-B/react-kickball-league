@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import TeamForm from "../../components/TeamForm";
-import { getTeamById, updateTeamById } from "../../services/teams";
+import TeamForm from "../../../components/TeamForm";
+import { getTeamById, updateTeamById } from "../../../services/teams";
 
 
 function UpdateTeam() {

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
-import TeamForm from "../../components/TeamForm";
-import { createTeam } from "../../services/teams";
+import TeamForm from "../../../components/TeamForm";
+import { createTeam } from "../../../services/teams";
 
 function AddTeam() {
     const [name, setName] = useState('');

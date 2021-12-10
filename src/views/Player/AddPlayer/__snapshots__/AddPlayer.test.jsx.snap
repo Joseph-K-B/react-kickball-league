@@ -15,7 +15,7 @@ exports[`renders form to allow admin to add player and redirects to their detail
       <input
         id="name"
         type="text"
-        value="New Team"
+        value="m"
       />
       <label
         for="position"
@@ -25,7 +25,7 @@ exports[`renders form to allow admin to add player and redirects to their detail
       <input
         id="position"
         type="text"
-        value="cheerleader"
+        value="r"
       />
       <label
         for="teams"
@@ -33,10 +33,13 @@ exports[`renders form to allow admin to add player and redirects to their detail
         Team:
       </label>
       <select
+        aria-label="teams"
         id="teams"
+        name="select team"
       />
       <button
         aria-label="edit player"
+        name="edit player"
         type="submit"
       >
         Submit

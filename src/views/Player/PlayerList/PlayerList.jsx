@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { getPlayers, deletePlayerById } from "../../services/players"
+import { deletePlayerById, getPlayers } from "../../../services/players"
+
 
 function PlayerList() {
     const[loading, setLoading] = useState(true)

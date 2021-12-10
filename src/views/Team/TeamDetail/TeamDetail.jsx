@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getTeamById } from "../../services/teams";
+import { getTeamById } from "../../../services/teams";
 
 function TeamDetail() {
     const { teamId } = useParams()
