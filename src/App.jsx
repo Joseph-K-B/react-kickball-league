@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './layout/Header/Header';
 import Home from './views/Home/Home';
-import './App.css';
 import Bracket from './views/Bracket/Bracket';
 import TeamList from './views/Team/TeamList/TeamList';
 import PlayerList from './views/Player/PlayerList/PlayerList';
@@ -11,6 +10,7 @@ import TeamDetail from './views/Team/TeamDetail/TeamDetail';
 import PlayerDetail from "./views/Player/PlayerDetail/PlayerDetail";
 import UpdateTeam from './views/Team/UpdateTeam/UpdateTeam';
 import UpdatePlayer from './views/Player/UpdatePlayer/UpdatePlayer';
+import './App.css';
 
 
 function App() {

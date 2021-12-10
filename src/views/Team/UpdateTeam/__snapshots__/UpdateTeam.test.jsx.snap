@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders form to update team 1`] = `
+<div>
+  <h1>
+    name
+  </h1>
+  <h3>
+    city
+    , 
+    state
+  </h3>
+  <p>
+    Wins: 
+  </p>
+  <ul />
+  <fieldset>
+    <legend>
+      Update Team
+    </legend>
+    <form>
+      <label
+        for="name"
+      >
+        Name:
+      </label>
+      <input
+        id="name"
+        type="text"
+        value="Another Team"
+      />
+      <label
+        for="city"
+      >
+        City:
+      </label>
+      <input
+        id="city"
+        type="text"
+        value="Another Town"
+      />
+      <label
+        for="state"
+      >
+        State:
+      </label>
+      <input
+        id="state"
+        type="text"
+        value="US"
+      />
+      <button
+        aria-label="edit team"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </fieldset>
+  <a
+    class="link"
+    href="/teams"
+  >
+    <p>
+      Team Directory
+    </p>
+  </a>
+</div>
+`;
