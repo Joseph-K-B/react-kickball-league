@@ -34,7 +34,7 @@ function PlayerList() {
     
     return(
         <>
-        <h1 className='listTitle'>Player List</h1>
+        <h1 className='listTitle'>Players</h1>
         <ul className='playerList'>
             {players.map((player) => (
                 <li className='playerListItem' key={player.id}>

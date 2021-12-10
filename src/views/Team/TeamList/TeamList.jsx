@@ -34,7 +34,7 @@ function TeamList() {
     
     return (
         <>
-        <h1 className='listTitle'>Team List</h1>
+        <h1 className='listTitle'>Teams</h1>
         <ul className='teamList'>
             {teams.map((team) => {
                 return (

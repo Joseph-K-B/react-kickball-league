@@ -6,7 +6,7 @@ import "../Home/Home.css"
 function Home() {
     return (
         <>
-        <h1>Home Page</h1>
+        <h1 className='listTitle'>Welcome Home</h1>
         <section className='homeSection'>
         <section className="newsSection">
             <img src={kickball} alt="kickball"></img>

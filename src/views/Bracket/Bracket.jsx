@@ -68,7 +68,7 @@ if(loading) return <h1>Loading bracket...</h1>
 
 return (
     <>
-    <h1>Bracket</h1>
+    <h1 className='listTitle' >Bracket</h1>
     <section className="bracketSection">
         <section className="controlSection">
             <BracketControls
