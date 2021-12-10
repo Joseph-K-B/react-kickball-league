@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import { deleteTeamById, getTeams } from '../../../services/teams';
+import "./TeamList.css";
 
 function TeamList() {
     const [loading, setLoading] = useState(true);
@@ -34,7 +35,7 @@ function TeamList() {
     return (
         <>
         <h1>Team List</h1>
-        <ul>
+        <ul className='teamList'>
             {teams.map((team) => {
                 return (
                     <li key={team.id}>

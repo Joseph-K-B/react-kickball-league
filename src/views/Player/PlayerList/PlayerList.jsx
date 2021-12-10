@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { deletePlayerById, getPlayers } from "../../../services/players"
-
+import "./PlayerList.css";
 
 function PlayerList() {
     const[loading, setLoading] = useState(true)
@@ -36,9 +36,9 @@ function PlayerList() {
     return(
         <>
         <h1>Player List</h1>
-        <ul>
+        <ul className='playerList'>
             {players.map((player) => (
-                <li key={player.id}>
+                <li className='playerListItem' key={player.id}>
                     <Link className='link' to={`/players/${player.id}`}>
                         <p>{player.name}</p>
                     </Link>

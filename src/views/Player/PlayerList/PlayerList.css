@@ -1,0 +1,8 @@
+.playerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .playerListItem {
+    margin: 10%;
+  }
