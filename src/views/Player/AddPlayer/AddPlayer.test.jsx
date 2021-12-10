@@ -6,9 +6,7 @@ import { createMemoryHistory } from "history";
 import userEvent from '@testing-library/user-event';
 import AddPlayer from './AddPlayer';
 import PlayerDetail from '../PlayerDetail/PlayerDetail';
-import TeamList from '../../Team/TeamList/TeamList';
 import { act } from 'react-dom/test-utils';
-import PlayerList from '../PlayerList/PlayerList';
 
 const mockPlayer = {
     id: 12,
@@ -35,24 +33,6 @@ const mockTeam2 = {
         state: 'state',
         players: []
     }
-const teams = [
-    {
-        id: 1,
-        created_at: '2021-12-08T16:09:33.408898+00:00',
-        name: 'name',
-        city: 'city',
-        state: 'state',
-        players: []
-    },
-    {
-        id: 2,
-        created_at: '2021-12-08T16:09:33.408898+00:00',
-        name: 'team name two',
-        city: 'city two',
-        state: 'state',
-        players: []
-    }
-]
 
 const server = setupServer(
     rest.get('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/teams', 
@@ -101,7 +81,6 @@ it('renders form to allow admin to add player and redirects to their details', a
             <Route exact path = '/players/new'>
                 <AddPlayer />
             </Route>
-            {/* <Route exact path = '/players' component={PlayerList}/> */}
             <Route exact path = '/players/:id' component={PlayerDetail} />
         </Router>
     );

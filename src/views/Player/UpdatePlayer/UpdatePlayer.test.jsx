@@ -6,7 +6,6 @@ import { createMemoryHistory } from "history";
 import userEvent from '@testing-library/user-event';
 import UpdatePlayer from './UpdatePlayer'
 import PlayerDetail from '../PlayerDetail/PlayerDetail';
-import { useEffect } from 'react';
 
 const mockPlayer = {
     id: 12,
@@ -45,6 +44,7 @@ it('renders form to update player', async () => {
             <Route>
                 <UpdatePlayer />
             </Route>
+            <Route exact path = '/players/:id' component={PlayerDetail} />
         </Router>
     );
 
