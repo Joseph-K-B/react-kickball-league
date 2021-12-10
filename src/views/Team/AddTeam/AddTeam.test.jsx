@@ -3,7 +3,7 @@ import { setupServer } from 'msw/node';
 import { rest } from 'msw';
 import {Router, Route } from 'react-router-dom';
 import { createMemoryHistory } from "history";
-import userEvent from '@testing-library/user-event'
+import userEvent from '@testing-library/user-event';
 import AddTeam from './AddTeam';
 import TeamDetail from '../TeamDetail/TeamDetail';
 
