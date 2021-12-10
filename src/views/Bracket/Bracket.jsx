@@ -80,7 +80,12 @@ return (
             <div>
                 <ul>
                     {bracket.map((item) => (
-                        <li key={item.id}>{item.name}</li>
+                        <li 
+                        className='shuffleList' 
+                        key={item.id}
+                        >
+                            {item.name}
+                        </li>
                         ))}
                 </ul>
             </div>

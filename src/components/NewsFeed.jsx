@@ -17,7 +17,7 @@ function NewsFeed(){
                 <p>
                     Hiring umpires for the spring season! Applicant must have 100 years of experience in the industry, preferably kickball specifically.
                     We also ask that you have a PHD in microbiology or equivalent. This job requires that you lift up to 1000lbs, can summit Mt. Everest,
-                    hold your breath for a minimum of 15 minutes, and applicant must be able to do a backflip.
+                    hold your breath for a minimum of 15 minutes, and applicant must be able to do a backflip. Pay starts at 7.25 a week. Benifits include pizza parties.
                 </p>
             </article>
             <article>

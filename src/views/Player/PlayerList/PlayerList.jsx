@@ -31,8 +31,7 @@ function PlayerList() {
     };
 
     if(loading) return <h1>Loading players...</h1>
-    console.log(players)
-
+    
     return(
         <>
         <h1>Player List</h1>

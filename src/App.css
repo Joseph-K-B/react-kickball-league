@@ -27,6 +27,13 @@ nav {
   width: 15.5em;
 }
 
+footer {
+  text-align: center;
+  height: 7rem;
+  background-color: #0D1321;
+  color: #B2BCC2;
+}
+
 .navLink {
   margin: 2.0%;
   color: #F0EBD8;
