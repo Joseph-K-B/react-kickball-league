@@ -56,7 +56,7 @@ it('renders team details according to id param', async () => {
     await screen.findByText(/Add Team/);
 
     const team = await screen.findByText(/Bridge City Sinners/, {exact: false});
-    const teamTwo = await screen.findByText(/Seattlites/, {exact: false});
+    const teamTwo = await screen.findByText(/Seattelites/, {exact: false});
     const teamThree = await screen.findByText(/Mt. hoodRats/, {exact: false});
     expect(team).toBeInTheDocument();
     expect(teamTwo).toBeInTheDocument();

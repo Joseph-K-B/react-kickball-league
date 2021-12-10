@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders team details according to id param 1`] = `
+<div>
+  <h1>
+    Bridge City Sinners
+  </h1>
+  <h3>
+    Portland
+    , 
+    OR
+  </h3>
+  <p>
+    Wins: 
+    0
+  </p>
+  <ul>
+    <li>
+      <a
+        class="link"
+        href="/players/4"
+      >
+        <p>
+          Outfield
+           - 
+          Dangalf the Wise
+        </p>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/players/2"
+      >
+        <p>
+          Catcher
+           - 
+          Will I Aint
+        </p>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/players/15"
+      >
+        <p>
+          3rd Base
+           - 
+          Nikki Kicks
+        </p>
+      </a>
+    </li>
+  </ul>
+  <a
+    class="link"
+    href="/teams"
+  >
+    <p>
+      Team Directory
+    </p>
+  </a>
+</div>
+`;

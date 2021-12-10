@@ -14,7 +14,7 @@ function AddPlayer() {
 
     const handleAddPlayerSubmit = async (e) => {
         e.preventDefault();
-        console.log('TEAM ID', teamId);
+        // console.log('TEAM ID', teamId);
         const res = await createPlayer({name, position, teamId})
         history.push(`/players/${res[0].id}`)
     }

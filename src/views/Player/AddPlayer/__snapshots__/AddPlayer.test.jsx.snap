@@ -15,7 +15,7 @@ exports[`renders form to allow admin to add player and redirects to their detail
       <input
         id="name"
         type="text"
-        value="m"
+        value="e"
       />
       <label
         for="position"

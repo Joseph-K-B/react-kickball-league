@@ -5,12 +5,13 @@ import { getPlayerById } from "../../../services/players";
 function PlayerDetail() {
     const{ id } = useParams()
     const[player, setPlayer] = useState(null);
-    // const [teams, setTeams] = useState([]);
 
     useEffect(() => {
         getPlayerById(id)
         .then((res) => setPlayer(res))
     }, [id])
+
+    console.log(player)
 
     if(!player) return <h2>Loading player info...</h2>
 

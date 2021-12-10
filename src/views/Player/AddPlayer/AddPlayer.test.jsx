@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import { setupServer } from 'msw/node';
 import { rest } from 'msw';
 import {Router, Route } from 'react-router-dom';
@@ -7,61 +7,52 @@ import userEvent from '@testing-library/user-event';
 import AddPlayer from './AddPlayer';
 import PlayerDetail from '../PlayerDetail/PlayerDetail';
 import { act } from 'react-dom/test-utils';
+import { getPlayerById } from '../../../services/players';
 
 const mockPlayer = {
-    id: 12,
+    id: 50,
     created_at: '2021-12-08T16:09:33.408898+00:00',
     name: 'player name',
-    position: 'benchwarmer',
-    teamId: 1
+    position: 'cheerleader',
+    teamId: 50,
+    teams: {}
+    // teams: {
+    //     id: 50,
+    //     created_at: '2021-12-08T16:09:33.408898+00:00',
+    //     name: 'team name',
+    //     city: 'city',
+    //     state: 'state',
+    // }
 }
 
 const mockTeam = {
-    id: 1,
+    id: 50,
     created_at: '2021-12-08T16:09:33.408898+00:00',
-    name: 'name',
+    name: 'team name',
     city: 'city',
     state: 'state',
     players: []
 }
 
-const mockTeam2 = {
-        id: 2,
-        created_at: '2021-12-08T16:09:33.408898+00:00',
-        name: 'team name two',
-        city: 'city two',
-        state: 'state',
-        players: []
-    }
-
 const server = setupServer(
     rest.get('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/teams', 
     (req, res, ctx) => {
-        return res(ctx.json(mockTeam));
+        return res(ctx.json([mockTeam]));
     }),
     rest.post('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/teams', 
     (req, res, ctx) => {
         return res (
             ctx.json([mockTeam]));
     }),
-    rest.get('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/teams', 
-    (req, res, ctx) => {
-        return res(ctx.json(mockTeam2));
-    }),
-    rest.post('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/teams', 
-    (req, res, ctx) => {
-        return res (
-            ctx.json([mockTeam2]));
-    }),
     rest.get('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/players', 
     (req, res, ctx) => {
-        return res(ctx.json(mockPlayer));
+        return res(ctx.json([mockPlayer]));
     }),
     rest.post('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/players', 
     (req, res, ctx) => {
         return res (
             ctx.json([mockPlayer]));
-    })
+    }),
 );
 
 beforeAll(() => {
@@ -90,17 +81,16 @@ it('renders form to allow admin to add player and redirects to their details', a
     const nameField = screen.getByLabelText(/Name:/);
     const positionField = screen.getByLabelText(/Position:/);
     const submitBtn = screen.getByRole('button', {name: 'edit player'});
-    // const teamField = await screen.findByLabelText(/Team:/);
-    const optionChoice = await screen.findByRole('combobox');
-
+    
     act(async () => {
-        userEvent.type(nameField, 'New Team');
+        userEvent.type(nameField, 'player name');
         userEvent.type(positionField, 'cheerleader');
-        userEvent.selectOptions(optionChoice, [mockTeam.id]);
+        userEvent.selectOptions(await screen.findByRole('combobox'), await screen.findByRole('option', [50]));
         userEvent.click(submitBtn);
-    })
+    });
 
-    // expect(screen.getByRole('option', {name: mockTeam.name}).selected).toBe(true)
-    expect(container).toMatchSnapshot();
-    // await screen.findByText('player name');
+
+        expect(container).toMatchSnapshot();
+        await screen.findByText('Loading player info...');
+        // await screen.findByText('player name');
 });

@@ -13,7 +13,7 @@ it('renders team details according to id param', async () => {
 
     screen.getByText('Loading team...')
 
-    const team = await screen.findByText(/Bridge City Sneakers/, {exact: false});
+    const team = await screen.findByText(/Bridge City Sinners/, {exact: false});
     const location = await screen.findByText(/Portland, OR/, {exact: false});
     expect(team).toBeInTheDocument();
     expect(location).toBeInTheDocument();

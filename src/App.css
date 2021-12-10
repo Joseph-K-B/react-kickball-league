@@ -2,6 +2,11 @@ html {
   background-color: #1D2D44;
 }
 
+/* .App {
+  height: fit-content;
+  width: fit-content;
+} */
+
 header {
   position: relative;
   background-color: #0D1321;
@@ -105,5 +110,7 @@ select:hover {
 
 .title {
   font-size: 2.25rem;
+  width: 40%;
+  margin: 2%;
 }
 
