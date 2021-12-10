@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react";
-import { getTeams } from "../services/teams";
-
 function PlayerUpdateForm({
     name,
     position,
