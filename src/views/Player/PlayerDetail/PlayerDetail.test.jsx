@@ -11,11 +11,11 @@ it('renders team details according to id param', async () => {
         </MemoryRouter>
     );
 
-    screen.getByText('Loading player info...')
+    await screen.findByText('Loading player info...');
 
     const player = await screen.findByText(/Margaret Catcher/, {exact: false});
     const location = await screen.findByText(/Portland, OR/, {exact: false});
     expect(player).toBeInTheDocument();
     expect(location).toBeInTheDocument();
     expect(container).toMatchSnapshot();
-})
+});

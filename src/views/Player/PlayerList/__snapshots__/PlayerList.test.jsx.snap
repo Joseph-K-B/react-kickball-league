@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders team details according to id param 1`] = `
+<div>
+  <h1
+    class="listTitle"
+  >
+    Players
+  </h1>
+  <ul
+    class="playerList"
+  >
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/8"
+      >
+        <p>
+          Bill Waits
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Bill Waits"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/8/update"
+        >
+          <button
+            aria-label="Update Bill Waits"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/4"
+      >
+        <p>
+          Dangalf the Wise
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Dangalf the Wise"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/4/update"
+        >
+          <button
+            aria-label="Update Dangalf the Wise"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/18"
+      >
+        <p>
+          Donald Bump
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Donald Bump"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/18/update"
+        >
+          <button
+            aria-label="Update Donald Bump"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/19"
+      >
+        <p>
+          Emily Bunt
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Emily Bunt"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/19/update"
+        >
+          <button
+            aria-label="Update Emily Bunt"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/10"
+      >
+        <p>
+          Homerun Simpson
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Homerun Simpson"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/10/update"
+        >
+          <button
+            aria-label="Update Homerun Simpson"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/11"
+      >
+        <p>
+          Izzie the Dog
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Izzie the Dog"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/11/update"
+        >
+          <button
+            aria-label="Update Izzie the Dog"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/3"
+      >
+        <p>
+          JK Bowling
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete JK Bowling"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/3/update"
+        >
+          <button
+            aria-label="Update JK Bowling"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/5"
+      >
+        <p>
+          Jaba the Hook
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Jaba the Hook"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/5/update"
+        >
+          <button
+            aria-label="Update Jaba the Hook"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/9"
+      >
+        <p>
+          Jimi Spindrix
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Jimi Spindrix"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/9/update"
+        >
+          <button
+            aria-label="Update Jimi Spindrix"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/7"
+      >
+        <p>
+          Kurt Coplain
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Kurt Coplain"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/7/update"
+        >
+          <button
+            aria-label="Update Kurt Coplain"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/1"
+      >
+        <p>
+          Margaret Catcher
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Margaret Catcher"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/1/update"
+        >
+          <button
+            aria-label="Update Margaret Catcher"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/6"
+      >
+        <p>
+          Marty McWhy
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Marty McWhy"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/6/update"
+        >
+          <button
+            aria-label="Update Marty McWhy"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/15"
+      >
+        <p>
+          Nikki Kicks
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Nikki Kicks"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/15/update"
+        >
+          <button
+            aria-label="Update Nikki Kicks"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/21"
+      >
+        <p>
+          Ruby the Dog
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Ruby the Dog"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/21/update"
+        >
+          <button
+            aria-label="Update Ruby the Dog"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/16"
+      >
+        <p>
+          Ruth Batter Winsburg
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Ruth Batter Winsburg"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/16/update"
+        >
+          <button
+            aria-label="Update Ruth Batter Winsburg"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/13"
+      >
+        <p>
+          Water Guy
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Water Guy"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/13/update"
+        >
+          <button
+            aria-label="Update Water Guy"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/2"
+      >
+        <p>
+          Will I Aint
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete Will I Aint"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/2/update"
+        >
+          <button
+            aria-label="Update Will I Aint"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+    <li
+      class="playerListItem"
+    >
+      <a
+        class="link"
+        href="/players/22"
+      >
+        <p>
+          random
+        </p>
+      </a>
+      <div>
+        <button
+          aria-label="Delete random"
+          type="button"
+        >
+          Delete
+        </button>
+        <a
+          href="/players/22/update"
+        >
+          <button
+            aria-label="Update random"
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+    </li>
+  </ul>
+  <a
+    class="link"
+    href="/players/new"
+  >
+    <p>
+      Add Player
+    </p>
+  </a>
+</div>
+`;

@@ -14,9 +14,9 @@ it('renders team details according to id param', async () => {
 
     screen.getByText('Loading players...')
 
-    const player = await screen.findByText(/Ben E. Jetts/, {exact: false});
-    const playerTwo = await screen.findByText(/Hans Olo/, {exact: false});
-    const playerThree = await screen.findByText(/Frito Pendejo/, {exact: false});
+    const player = await screen.findByText(/Bill Waits/i);
+    const playerTwo = await screen.findByText(/Izzie the Dog/i);
+    const playerThree = await screen.findByText(/Kurt Coplain/i);
     expect(player).toBeInTheDocument();
     expect(playerTwo).toBeInTheDocument();
     expect(playerThree).toBeInTheDocument();
