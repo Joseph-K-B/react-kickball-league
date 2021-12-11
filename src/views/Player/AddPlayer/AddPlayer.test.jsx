@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { setupServer } from 'msw/node';
 import { rest } from 'msw';
 import {Router, Route } from 'react-router-dom';
@@ -7,7 +7,6 @@ import userEvent from '@testing-library/user-event';
 import AddPlayer from './AddPlayer';
 import PlayerDetail from '../PlayerDetail/PlayerDetail';
 import { act } from 'react-dom/test-utils';
-import { getPlayerById } from '../../../services/players';
 
 const mockPlayer = {
     id: 50,
