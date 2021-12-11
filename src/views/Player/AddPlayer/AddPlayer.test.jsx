@@ -16,13 +16,6 @@ const mockPlayer = {
     position: 'cheerleader',
     teamId: 50,
     teams: {}
-    // teams: {
-    //     id: 50,
-    //     created_at: '2021-12-08T16:09:33.408898+00:00',
-    //     name: 'team name',
-    //     city: 'city',
-    //     state: 'state',
-    // }
 }
 
 const mockTeam = {
@@ -46,7 +39,7 @@ const server = setupServer(
     }),
     rest.get('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/players', 
     (req, res, ctx) => {
-        return res(ctx.json([mockPlayer]));
+        return res(ctx.json(mockPlayer));
     }),
     rest.post('https://vrmauzdnhcbzknrntyjm.supabase.co/rest/v1/players', 
     (req, res, ctx) => {
@@ -92,5 +85,5 @@ it('renders form to allow admin to add player and redirects to their details', a
 
         expect(container).toMatchSnapshot();
         await screen.findByText('Loading player info...');
-        // await screen.findByText('player name');
+        await screen.findByText('player name');
 });
