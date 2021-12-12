@@ -70,8 +70,8 @@ it('renders form to allow admin to add player and redirects to their details', a
 
     screen.getByText('Add Player');
 
-    const nameField = screen.getByLabelText(/Name:/);
-    const positionField = screen.getByLabelText(/Position:/);
+    const nameField = screen.getByLabelText(/Name:/i);
+    const positionField = screen.getByLabelText(/Position:/i);
     const submitBtn = screen.getByRole('button', {name: 'edit player'});
     
     act(async () => {
