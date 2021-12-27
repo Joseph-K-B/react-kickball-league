@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders team details according to id param 1`] = `
+<div>
+  <h1
+    class="listTitle"
+  >
+    Teams
+  </h1>
+  <ul
+    class="teamList"
+  >
+    <li>
+      <a
+        class="link"
+        href="/teams/1"
+      >
+        <p>
+          Bridge City Sinners
+        </p>
+      </a>
+      <button
+        aria-label="Delete Bridge City Sinners"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/1/update"
+      >
+        <button
+          aria-label="Update Bridge City Sinners"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/3"
+      >
+        <p>
+          Mt. hoodRats
+        </p>
+      </a>
+      <button
+        aria-label="Delete Mt. hoodRats"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/3/update"
+      >
+        <button
+          aria-label="Update Mt. hoodRats"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/7"
+      >
+        <p>
+          Neverhalem
+        </p>
+      </a>
+      <button
+        aria-label="Delete Neverhalem"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/7/update"
+      >
+        <button
+          aria-label="Update Neverhalem"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/4"
+      >
+        <p>
+          Once More unto the Cannon Breach
+        </p>
+      </a>
+      <button
+        aria-label="Delete Once More unto the Cannon Breach"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/4/update"
+      >
+        <button
+          aria-label="Update Once More unto the Cannon Breach"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/2"
+      >
+        <p>
+          PDX-WIK
+        </p>
+      </a>
+      <button
+        aria-label="Delete PDX-WIK"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/2/update"
+      >
+        <button
+          aria-label="Update PDX-WIK"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/8"
+      >
+        <p>
+          Salem Pitch Trials
+        </p>
+      </a>
+      <button
+        aria-label="Delete Salem Pitch Trials"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/8/update"
+      >
+        <button
+          aria-label="Update Salem Pitch Trials"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/5"
+      >
+        <p>
+          Seattelites
+        </p>
+      </a>
+      <button
+        aria-label="Delete Seattelites"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/5/update"
+      >
+        <button
+          aria-label="Update Seattelites"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+    <li>
+      <a
+        class="link"
+        href="/teams/6"
+      >
+        <p>
+          Six Quadrants
+        </p>
+      </a>
+      <button
+        aria-label="Delete Six Quadrants"
+        type="button"
+      >
+        Delete
+      </button>
+      <a
+        href="/teams/6/update"
+      >
+        <button
+          aria-label="Update Six Quadrants"
+          type="button"
+        >
+          Update
+        </button>
+      </a>
+    </li>
+  </ul>
+  <a
+    class="link"
+    href="/teams/new"
+  >
+    <p>
+      Add Team
+    </p>
+  </a>
+</div>
+`;

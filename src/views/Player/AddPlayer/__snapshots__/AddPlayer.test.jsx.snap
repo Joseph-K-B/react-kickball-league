@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders form to allow admin to add player and redirects to their details 1`] = `
+<div>
+  <fieldset>
+    <legend>
+      Add Player
+    </legend>
+    <form>
+      <label
+        for="name"
+      >
+        Name:
+      </label>
+      <input
+        id="name"
+        type="text"
+        value="e"
+      />
+      <label
+        for="position"
+      >
+        Position:
+      </label>
+      <input
+        id="position"
+        type="text"
+        value="r"
+      />
+      <label
+        for="teams"
+      >
+        Team:
+      </label>
+      <select
+        aria-label="teams"
+        id="teams"
+        name="select team"
+      />
+      <button
+        aria-label="edit player"
+        name="edit player"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </fieldset>
+  <h2>
+    Loading player info...
+  </h2>
+</div>
+`;

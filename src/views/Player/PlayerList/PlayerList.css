@@ -1,0 +1,26 @@
+.listTitle {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.playerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .playerListItem {
+    position: relative;
+    right: 11.5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5%;
+    text-align: center;
+    border: #F0EBD8 solid 0.15rem;
+    border-radius: 7%;
+  }

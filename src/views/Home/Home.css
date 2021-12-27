@@ -1,0 +1,14 @@
+.homeSection {
+    display: grid;
+    grid-template-columns: 2.5fr 4fr;
+    text-align: center;
+}
+
+.newsSection {
+    margin: 10%;
+}
+
+img {
+    height: 7.5rem;
+    width: 7.5rem;
+}

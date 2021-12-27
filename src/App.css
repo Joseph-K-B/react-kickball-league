@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+html {
+  background-color: #1D2D44;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .App {
+  height: fit-content;
+  width: fit-content;
+} */
+
+header {
+  position: relative;
+  background-color: #0D1321;
+  color: #B2BCC2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.0rem;
+  width: 100%;
+  border-radius: 0 0 85% 85% / 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
+  background-color: #1D2D44;
+  color: #B2BCC2;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 15.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  text-align: center;
+  height: 7rem;
+  background-color: #0D1321;
+  color: #B2BCC2;
 }
+
+fieldset {
+  text-align: center;
+  background-color: #3E5C76;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15rem;  
+}
+
+input {
+  color: #B2BCC2;
+  background-color: #1D2D44;
+  border-radius: 20%;
+  height: 1.25rem;
+}
+
+input:hover {
+  background-color: #B2BCC2;
+  color: #1D2D44;
+}
+
+select {
+  -webkit-appearance: none;
+  text-align: center;
+  color: #B2BCC2;
+  background-color: #1D2D44;
+  border-radius: 17%;
+  height: 1.5rem;
+}
+
+select:hover {
+  background-color: #B2BCC2;
+  color: #1D2D44;
+  cursor: crosshair;
+}
+
+.navLink {
+  margin: 2.0%;
+  color: #F0EBD8;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #748CAB;
+  text-decoration: underline;
+}
+
+.link {
+  color: #F0EBD8;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #748CAB;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 2.25rem;
+  width: 40%;
+  margin: 2%;
+}
+

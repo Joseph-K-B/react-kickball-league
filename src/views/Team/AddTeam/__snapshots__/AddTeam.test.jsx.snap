@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders form to add team and redirects to team details 1`] = `
+<div>
+  <fieldset>
+    <legend>
+      Add Team
+    </legend>
+    <form>
+      <label
+        for="name"
+      >
+        Name:
+      </label>
+      <input
+        id="name"
+        type="text"
+        value="Another Team"
+      />
+      <label
+        for="city"
+      >
+        City:
+      </label>
+      <input
+        id="city"
+        type="text"
+        value="Another Town"
+      />
+      <label
+        for="state"
+      >
+        State:
+      </label>
+      <input
+        id="state"
+        type="text"
+        value="US"
+      />
+      <button
+        aria-label="edit team"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </fieldset>
+  <h2>
+    Loading team...
+  </h2>
+</div>
+`;
